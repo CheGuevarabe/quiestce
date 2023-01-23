@@ -1,0 +1,30 @@
+.title {
+  color: #ffee00; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-5deg);
+}
+
+body {
+  background-color: #00d9ff; 
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
+}
+.image {
+  width: 200px;
+  box-shadow: 10px 10px 10px #000000;
+}
+.iframe-container {
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+blockquote {
+  width: 100%;
+}
