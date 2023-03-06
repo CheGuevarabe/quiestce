@@ -1,0 +1,67 @@
+.title {
+  color: #ffee00; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-5deg);
+}
+
+body {
+  background-color: #00d9ff; 
+}
+
+.image {
+  width: 200px;
+  box-shadow: 10px 10px 10px #000000;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
+}
+
+.text-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  opacity: 0;
+  width: 79%; /* pour que la largeur soit égale à celle de l'image */
+  height: 99%; /* pour que la hauteur soit égale à celle de l'image */
+  box-sizing: border-box; /* inclure la bordure et le rembourrage dans la largeur */
+  display: flex; /* activer le mode flexbox */
+  flex-direction: column; /* aligner le contenu en colonne */
+  justify-content: center; /* centrer verticalement */
+  align-items: center; /* centrer horizontalement */
+}
+
+.image-container:hover .text-container {
+  opacity: 1;
+}
+
+.text-container p {
+  margin: 0;
+  font-size: 16px; /* ajuster la taille de la police de caractère */
+}
+
+figcaption {
+  max-width: 100%;
+  text-align: center;
+}
+
+.image-container:hover .text-container {
+  opacity: 1;
+}
+
+.iframe-container {
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+
+blockquote {
+  width: 100%;
+}
