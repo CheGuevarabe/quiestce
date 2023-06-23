@@ -1,0 +1,13 @@
+body {
+    background-color: #1b3f7e;
+    font-family: 'Mathilga', sans-serif;
+    color: #da6e41;
+  }
+  @font-face {
+    font-family: 'Mathilga';
+    src: url('typo/Mathilga.ttf') format('truetype');
+  }
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
